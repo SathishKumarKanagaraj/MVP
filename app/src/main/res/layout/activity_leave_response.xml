@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_text"
+        android:text="Leave Request List"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_text"
+        android:layout_marginTop="10dp"
+        android:id="@+id/leave_recycler">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

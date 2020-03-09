@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/hotel_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="name"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/location_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="location"
+            android:textSize="16sp"></TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textSize="12sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="rating"
+            android:textSize="16sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/no_of_customers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no of customers"
+            android:textSize="16sp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/amout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="amout"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
